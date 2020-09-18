@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ImportProjectsDataSet" targetNamespace="http://tempuri.org/ImportProjectsDataSet.xsd" xmlns:mstns="http://tempuri.org/ImportProjectsDataSet.xsd" xmlns="http://tempuri.org/ImportProjectsDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ImportProjectsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ImportProjectsDataSet" msprop:Generator_UserDSName="ImportProjectsDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="importprojects" msprop:Generator_TableClassName="importprojectsDataTable" msprop:Generator_TableVarName="tableimportprojects" msprop:Generator_RowChangedName="importprojectsRowChanged" msprop:Generator_TablePropName="importprojects" msprop:Generator_RowDeletingName="importprojectsRowDeleting" msprop:Generator_RowChangingName="importprojectsRowChanging" msprop:Generator_RowEvHandlerName="importprojectsRowChangeEventHandler" msprop:Generator_RowDeletedName="importprojectsRowDeleted" msprop:Generator_RowClassName="importprojectsRow" msprop:Generator_UserTableName="importprojects" msprop:Generator_RowEvArgName="importprojectsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TransactionID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnTransactionID" msprop:Generator_ColumnPropNameInRow="TransactionID" msprop:Generator_ColumnPropNameInTable="TransactionIDColumn" msprop:Generator_UserColumnName="TransactionID" type="xs:int" />
+              <xs:element name="ProjectID" msprop:Generator_ColumnVarNameInTable="columnProjectID" msprop:Generator_ColumnPropNameInRow="ProjectID" msprop:Generator_ColumnPropNameInTable="ProjectIDColumn" msprop:Generator_UserColumnName="ProjectID" type="xs:int" />
+              <xs:element name="SecondProjectID" msprop:Generator_ColumnVarNameInTable="columnSecondProjectID" msprop:Generator_ColumnPropNameInRow="SecondProjectID" msprop:Generator_ColumnPropNameInTable="SecondProjectIDColumn" msprop:Generator_UserColumnName="SecondProjectID" type="xs:int" />
+              <xs:element name="AssignedProjectID" msprop:Generator_ColumnVarNameInTable="columnAssignedProjectID" msprop:Generator_ColumnPropNameInRow="AssignedProjectID" msprop:Generator_ColumnPropNameInTable="AssignedProjectIDColumn" msprop:Generator_UserColumnName="AssignedProjectID" type="xs:string" />
+              <xs:element name="CustomerProjectID" msprop:Generator_ColumnVarNameInTable="columnCustomerProjectID" msprop:Generator_ColumnPropNameInRow="CustomerProjectID" msprop:Generator_ColumnPropNameInTable="CustomerProjectIDColumn" msprop:Generator_UserColumnName="CustomerProjectID" type="xs:string" />
+              <xs:element name="TransactionDate" msprop:Generator_ColumnVarNameInTable="columnTransactionDate" msprop:Generator_ColumnPropNameInRow="TransactionDate" msprop:Generator_ColumnPropNameInTable="TransactionDateColumn" msprop:Generator_UserColumnName="TransactionDate" type="xs:dateTime" />
+              <xs:element name="EmployeeID" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" msprop:Generator_UserColumnName="EmployeeID" type="xs:int" />
+              <xs:element name="WarehouseID" msprop:Generator_ColumnVarNameInTable="columnWarehouseID" msprop:Generator_ColumnPropNameInRow="WarehouseID" msprop:Generator_ColumnPropNameInTable="WarehouseIDColumn" msprop:Generator_UserColumnName="WarehouseID" type="xs:int" />
+              <xs:element name="DepartmentID" msprop:Generator_ColumnVarNameInTable="columnDepartmentID" msprop:Generator_ColumnPropNameInRow="DepartmentID" msprop:Generator_ColumnPropNameInTable="DepartmentIDColumn" msprop:Generator_UserColumnName="DepartmentID" type="xs:int" />
+              <xs:element name="DoNotImport" msprop:Generator_ColumnVarNameInTable="columnDoNotImport" msprop:Generator_ColumnPropNameInRow="DoNotImport" msprop:Generator_ColumnPropNameInTable="DoNotImportColumn" msprop:Generator_UserColumnName="DoNotImport" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:importprojects" />
+      <xs:field xpath="mstns:TransactionID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
